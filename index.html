@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>カルぺ・ディエム行政書士事務所｜介護・障害福祉の許認可専門｜北海道</title>
+<meta name="description" content="北海道の介護・障害福祉・児童発達支援の許認可申請を専門とする行政書士事務所。初回相談無料。法人設立前・物件未定の段階からご相談ください。">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--teal:#2a8f7f;--teal2:#3aab99;--teal-lt:#e6f5f3;--teal-bg:#f0faf8;--warm:#f97316;--warm-lt:#fff4ed;--navy:#1e3a5f;--gray:#6b7280;--gray-lt:#f3f4f6;--text:#1f2937;--white:#ffffff;--cream:#fdfaf6;--border:#e5e7eb;--r:12px;--r2:20px;--sans:'Zen Kaku Gothic New','Noto Sans JP',sans-serif;--serif:'Noto Serif JP',serif;--shadow-sm:0 2px 8px rgba(0,0,0,.06);--shadow:0 6px 24px rgba(0,0,0,.09);--shadow-lg:0 16px 48px rgba(0,0,0,.12)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--text);background:var(--white);line-height:1.85;font-size:15px}
+a{text-decoration:none;color:inherit}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:var(--white);border-bottom:2px solid var(--teal-lt);display:flex;align-items:center;justify-content:space-between;padding:0 40px;height:68px;transition:box-shadow .3s}
+.nav.scrolled{box-shadow:var(--shadow-sm)}
+.nav-logo{display:flex;align-items:center;gap:12px}
+.nav-logo-mark{width:38px;height:38px;background:var(--teal);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px}
+.nav-logo-sub{font-size:10px;color:var(--teal);letter-spacing:.1em}
+.nav-logo-main{font-size:16px;font-weight:700;color:var(--navy)}
+.nav-links{display:flex;align-items:center;gap:20px;list-style:none}
+.nav-links a{font-size:12px;font-weight:500;color:var(--gray);transition:color .2s}
+.nav-links a:hover{color:var(--teal)}
+.nav-cta{background:var(--teal)!important;color:var(--white)!important;padding:10px 22px!important;border-radius:24px!important;font-weight:700!important;box-shadow:0 3px 12px rgba(42,143,127,.3)}
+.nav-cta:hover{background:var(--teal2)!important;transform:translateY(-1px)}
+.hero{min-height:100vh;padding-top:68px;background:var(--cream);display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:0;right:0;width:55%;height:100%;background:linear-gradient(135deg,var(--teal-bg) 0%,var(--teal-lt) 100%);border-radius:0 0 0 60% / 0 0 0 30%;z-index:0}
+.hero-inner{max-width:1100px;margin:0 auto;padding:80px 40px;display:grid;grid-template-columns:1fr 400px;gap:60px;align-items:center;position:relative;z-index:1}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:var(--teal-lt);color:var(--teal);font-size:12px;font-weight:700;letter-spacing:.1em;padding:6px 16px;border-radius:24px;margin-bottom:20px}
+.hero-title{font-family:var(--serif);font-size:clamp(24px,3.5vw,42px);font-weight:700;line-height:1.65;color:var(--navy);margin-bottom:20px}
+.hero-title em{font-style:normal;color:var(--teal)}
+.hero-desc{font-size:15px;color:var(--gray);line-height:2;margin-bottom:32px}
+.hero-btns{display:flex;gap:14px;flex-wrap:wrap}
+.btn-main{display:inline-flex;align-items:center;gap:8px;background:var(--teal);color:var(--white);font-weight:700;font-size:15px;padding:16px 32px;border-radius:30px;box-shadow:0 6px 20px rgba(42,143,127,.35);transition:background .2s,transform .2s}
+.btn-main:hover{background:var(--teal2);transform:translateY(-2px)}
+.btn-sub{display:inline-flex;align-items:center;gap:8px;border:2px solid var(--teal);color:var(--teal);font-weight:700;font-size:15px;padding:14px 28px;border-radius:30px;transition:background .2s}
+.btn-sub:hover{background:var(--teal-lt)}
+.hero-trust{display:flex;gap:14px;margin-top:32px;flex-wrap:wrap}
+.trust-chip{display:flex;align-items:center;gap:8px;background:var(--white);border:1px solid var(--border);padding:8px 14px;border-radius:24px;font-size:13px;color:var(--navy);box-shadow:var(--shadow-sm)}
+.hero-card{background:var(--white);border-radius:var(--r2);box-shadow:var(--shadow-lg);overflow:hidden}
+.hero-card-header{background:var(--teal);padding:20px 24px;color:var(--white)}
+.hero-card-header-sub{font-size:11px;opacity:.8;margin-bottom:2px}
+.hero-card-header-title{font-family:var(--serif);font-size:17px;font-weight:700}
+.hero-card-row{display:flex;align-items:center;justify-content:space-between;padding:13px 24px;border-bottom:1px solid var(--gray-lt);font-size:14px}
+.hero-card-row:last-child{border-bottom:none}
+.hero-card-label{color:var(--gray)}
+.hero-card-val{font-weight:700;color:var(--navy)}
+.hero-card-val.free{color:var(--teal)}
+.hero-card-footer{padding:16px 24px 24px}
+.hero-card-cta{display:block;text-align:center;background:var(--warm);color:var(--white);font-weight:700;font-size:15px;padding:15px;border-radius:12px;transition:background .2s,transform .2s;box-shadow:0 4px 16px rgba(249,115,22,.3)}
+.hero-card-cta:hover{background:#ea6c0a;transform:translateY(-1px)}
+.hero-card-note{text-align:center;font-size:11px;color:var(--gray);margin-top:10px}
+.section{padding:88px 0}
+.section-inner{max-width:1100px;margin:0 auto;padding:0 40px}
+.section-head{text-align:center;margin-bottom:52px}
+.section-badge{display:inline-block;background:var(--teal-lt);color:var(--teal);font-size:11px;font-weight:700;letter-spacing:.15em;padding:5px 16px;border-radius:20px;margin-bottom:14px}
+.section-title{font-family:var(--serif);font-size:clamp(22px,3vw,34px);font-weight:700;color:var(--navy);line-height:1.5;margin-bottom:14px}
+.section-desc{font-size:14px;color:var(--gray);line-height:2;max-width:520px;margin:0 auto}
+.worry{background:var(--teal-bg)}
+.worry-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.worry-card{background:var(--white);border-radius:var(--r);padding:28px 24px;box-shadow:var(--shadow-sm);border-top:4px solid var(--teal);transition:transform .2s,box-shadow .2s}
+.worry-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.worry-icon{font-size:36px;margin-bottom:14px}
+.worry-title{font-weight:700;font-size:15px;color:var(--navy);margin-bottom:8px;line-height:1.5}
+.worry-desc{font-size:13px;color:var(--gray);line-height:1.9}
+.worry-answer{margin-top:36px;background:var(--white);border-radius:var(--r);border-left:5px solid var(--teal);padding:24px 28px;display:flex;gap:16px;align-items:flex-start;box-shadow:var(--shadow-sm)}
+.worry-answer-icon{font-size:28px;flex-shrink:0}
+.worry-answer-text{font-size:14px;line-height:2;color:var(--text)}
+.worry-answer-text strong{color:var(--teal)}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.service-card{background:var(--cream);border-radius:var(--r);padding:32px 28px;border:2px solid transparent;transition:border-color .2s,transform .2s,box-shadow .2s}
+.service-card:hover{border-color:var(--teal);transform:translateY(-4px);box-shadow:var(--shadow)}
+.service-emoji{font-size:44px;margin-bottom:16px}
+.service-cat{font-size:11px;font-weight:700;letter-spacing:.12em;color:var(--teal);margin-bottom:8px}
+.service-name{font-family:var(--serif);font-size:20px;font-weight:700;color:var(--navy);margin-bottom:12px}
+.service-desc{font-size:13px;color:var(--gray);line-height:1.9;margin-bottom:18px}
+.service-list{list-style:none;display:flex;flex-direction:column;gap:6px}
+.service-list li{font-size:13px;color:var(--text);display:flex;align-items:flex-start;gap:8px;padding:5px 0;border-bottom:1px dashed var(--border)}
+.service-list li:last-child{border-bottom:none}
+.service-list li::before{content:'✓';color:var(--teal);font-weight:700;flex-shrink:0}
+.service-extras{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:20px}
+.service-extra{background:var(--teal-bg);border-radius:var(--r);padding:20px 22px;display:flex;gap:14px;align-items:flex-start}
+.service-extra-icon{font-size:24px;flex-shrink:0}
+.service-extra-name{font-weight:700;font-size:14px;color:var(--navy);margin-bottom:4px}
+.service-extra-desc{font-size:12px;color:var(--gray);line-height:1.8}
+.flow-bg{background:var(--gray-lt)}
+.flow-steps{display:grid;grid-template-columns:repeat(5,1fr);gap:0;position:relative}
+.flow-steps::before{content:'';position:absolute;top:36px;left:calc(10% + 18px);right:calc(10% + 18px);height:3px;background:linear-gradient(90deg,var(--teal),var(--teal2));border-radius:2px;z-index:0}
+.flow-step{display:flex;flex-direction:column;align-items:center;text-align:center;padding:0 12px;position:relative;z-index:1}
+.flow-circle{width:72px;height:72px;background:var(--teal);border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;margin-bottom:18px;box-shadow:0 4px 16px rgba(42,143,127,.3);border:3px solid var(--white)}
+.flow-circle-step{font-size:9px;font-weight:700;color:rgba(255,255,255,.7);letter-spacing:.1em}
+.flow-circle-n{font-size:22px;font-weight:700;color:var(--white);line-height:1}
+.flow-icon{font-size:20px;margin-bottom:10px}
+.flow-name{font-weight:700;font-size:14px;color:var(--navy);margin-bottom:6px}
+.flow-desc{font-size:12px;color:var(--gray);line-height:1.8}
+.flow-note{margin-top:44px;background:var(--white);border-radius:var(--r);padding:24px 28px;display:flex;gap:16px;align-items:flex-start;box-shadow:var(--shadow-sm);border:1px solid var(--teal-lt)}
+.flow-note-icon{font-size:24px;flex-shrink:0}
+.flow-note-text{font-size:14px;line-height:2;color:var(--text)}
+.flow-note-text strong{color:var(--teal)}
+.strengths-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.strength-card{background:var(--cream);border-radius:var(--r);padding:32px 28px;display:flex;gap:20px;align-items:flex-start;transition:transform .2s,box-shadow .2s}
+.strength-card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.strength-num{width:52px;height:52px;flex-shrink:0;background:var(--teal);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:20px;font-weight:700;color:var(--white)}
+.strength-title{font-weight:700;font-size:16px;color:var(--navy);margin-bottom:8px}
+.strength-desc{font-size:13px;color:var(--gray);line-height:1.9}
+.price-bg{background:var(--teal-bg)}
+.price-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.price-card{background:var(--white);border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow-sm);transition:transform .2s,box-shadow .2s}
+.price-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.price-card-head{background:var(--navy);padding:20px 24px;color:var(--white)}
+.price-card-head.teal{background:var(--teal)}
+.price-card-cat{font-size:11px;opacity:.7;letter-spacing:.1em;margin-bottom:4px}
+.price-card-name{font-family:var(--serif);font-size:17px;font-weight:700}
+.price-card-body{padding:20px 24px}
+.price-from{font-size:12px;color:var(--gray);margin-bottom:4px}
+.price-main{display:flex;align-items:flex-end;gap:4px;margin-bottom:6px}
+.price-num{font-family:var(--serif);font-size:32px;font-weight:700;color:var(--navy)}
+.price-unit{font-size:13px;color:var(--gray);margin-bottom:6px}
+.price-note{font-size:11px;color:var(--gray);line-height:1.7}
+.price-items{margin-top:14px;list-style:none;display:flex;flex-direction:column;gap:6px}
+.price-items li{font-size:12px;color:var(--text);display:flex;align-items:flex-start;gap:7px;padding:4px 0;border-bottom:1px dashed var(--border)}
+.price-items li:last-child{border-bottom:none}
+.price-items li::before{content:'›';color:var(--teal);font-weight:700;flex-shrink:0}
+.price-jippi{margin-top:20px;background:var(--warm-lt);border-radius:var(--r);padding:16px 20px;font-size:13px;line-height:1.9;color:var(--text);border-left:4px solid var(--warm)}
+.voice-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.voice-card{background:var(--cream);border-radius:var(--r);padding:28px 24px;position:relative;box-shadow:var(--shadow-sm)}
+.voice-quote{font-size:48px;line-height:1;color:var(--teal-lt);font-family:Georgia,serif;position:absolute;top:12px;left:20px}
+.voice-text{font-size:14px;line-height:2;color:var(--text);padding-top:20px}
+.voice-name{margin-top:16px;padding-top:14px;border-top:1px solid var(--border);display:flex;align-items:center;gap:10px}
+.voice-avatar{width:38px;height:38px;background:var(--teal);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px}
+.voice-person{font-size:13px;font-weight:700;color:var(--navy)}
+.voice-detail{font-size:11px;color:var(--gray)}
+.faq-bg{background:var(--gray-lt)}
+.faq-list{display:flex;flex-direction:column;gap:10px}
+.faq-item{background:var(--white);border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow-sm)}
+.faq-q{display:flex;align-items:flex-start;gap:16px;padding:20px 24px;cursor:pointer;transition:background .2s}
+.faq-q:hover{background:var(--teal-bg)}
+.faq-q-icon{width:30px;height:30px;flex-shrink:0;background:var(--teal);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;color:var(--white);margin-top:1px}
+.faq-q-text{font-size:14px;font-weight:500;color:var(--navy);flex:1;line-height:1.7}
+.faq-toggle{width:24px;height:24px;flex-shrink:0;border:2px solid var(--border);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:16px;color:var(--gray);transition:transform .3s,background .2s;margin-top:3px}
+.faq-item.open .faq-toggle{transform:rotate(45deg);background:var(--teal);border-color:var(--teal);color:var(--white)}
+.faq-a{display:none;padding:0 24px 20px 70px;font-size:13px;color:var(--gray);line-height:2;border-top:1px dashed var(--border)}
+.faq-item.open .faq-a{display:block}
+.about-bg{background:var(--teal-bg)}
+.about-inner{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.about-photo{background:var(--white);border-radius:var(--r2);box-shadow:var(--shadow-lg);aspect-ratio:4/5;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;color:var(--gray);position:relative}
+.about-photo-avatar{font-size:80px;opacity:.4}
+.about-photo-label{font-size:12px;color:var(--gray)}
+.about-photo-tag{position:absolute;bottom:24px;background:var(--teal);color:var(--white);font-weight:700;font-size:13px;padding:10px 20px;border-radius:24px;box-shadow:0 4px 16px rgba(42,143,127,.35)}
+.about-licenses{display:flex;flex-direction:column;gap:12px;margin:24px 0}
+.about-license{background:var(--white);border-radius:10px;padding:14px 18px;display:flex;align-items:center;gap:14px;box-shadow:var(--shadow-sm);border-left:4px solid var(--teal)}
+.about-license-icon{font-size:22px;flex-shrink:0}
+.about-license-name{font-weight:700;font-size:14px;color:var(--navy)}
+.about-license-reg{font-size:12px;color:var(--gray)}
+.about-message{background:var(--white);border-radius:var(--r);padding:24px;font-size:13px;line-height:2.1;color:var(--text);box-shadow:var(--shadow-sm);position:relative}
+.about-message::before{content:'✦ 代表メッセージ';display:block;font-size:11px;font-weight:700;letter-spacing:.12em;color:var(--teal);margin-bottom:10px}
+.contact-sec{background:var(--teal);padding:80px 0}
+.contact-inner{max-width:1100px;margin:0 auto;padding:0 40px}
+.contact-head{text-align:center;margin-bottom:48px}
+.contact-head-sub{font-size:13px;color:rgba(255,255,255,.8);margin-bottom:8px;letter-spacing:.1em}
+.contact-head-title{font-family:var(--serif);font-size:30px;font-weight:700;color:var(--white);margin-bottom:14px}
+.contact-head-desc{font-size:14px;color:rgba(255,255,255,.8);line-height:2}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.contact-form{background:var(--white);border-radius:var(--r2);padding:36px;box-shadow:var(--shadow-lg)}
+.contact-form-title{font-family:var(--serif);font-size:20px;font-weight:700;color:var(--navy);margin-bottom:6px}
+.contact-form-sub{font-size:12px;color:var(--gray);margin-bottom:24px}
+.form-group{margin-bottom:16px}
+.form-label{display:block;font-size:13px;font-weight:500;color:var(--navy);margin-bottom:6px}
+.form-req{color:var(--teal);margin-left:3px;font-size:14px}
+.form-input,.form-select,.form-textarea{width:100%;border:2px solid var(--border);border-radius:10px;padding:12px 16px;font-family:var(--sans);font-size:14px;color:var(--text);background:var(--white);transition:border-color .2s;outline:none}
+.form-input:focus,.form-select:focus,.form-textarea:focus{border-color:var(--teal)}
+.form-textarea{resize:vertical;min-height:90px}
+.form-btn{width:100%;background:var(--teal);color:var(--white);font-family:var(--sans);font-weight:700;font-size:16px;padding:16px;border:none;border-radius:30px;cursor:pointer;box-shadow:0 6px 20px rgba(42,143,127,.4);transition:background .2s,transform .2s;margin-top:6px}
+.form-btn:hover{background:var(--teal2);transform:translateY(-2px)}
+.form-note{font-size:12px;color:var(--gray);text-align:center;margin-top:10px}
+.contact-info{display:flex;flex-direction:column;gap:16px}
+.contact-info-card{background:rgba(255,255,255,.15);border-radius:var(--r);padding:22px 24px;border:1px solid rgba(255,255,255,.2);display:flex;gap:16px;align-items:flex-start}
+.contact-info-icon{width:44px;height:44px;flex-shrink:0;background:rgba(255,255,255,.2);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px}
+.contact-info-label{font-size:11px;color:rgba(255,255,255,.7);letter-spacing:.12em;margin-bottom:2px}
+.contact-info-val{font-size:16px;font-weight:700;color:var(--white)}
+.contact-cta{background:var(--warm);border-radius:var(--r);padding:24px;text-align:center;box-shadow:0 6px 24px rgba(249,115,22,.3)}
+.contact-cta-text{font-size:14px;color:var(--white);opacity:.9;margin-bottom:12px}
+.contact-cta-btn{display:inline-block;background:var(--white);color:var(--warm);font-weight:700;font-size:15px;padding:14px 32px;border-radius:30px;transition:transform .2s}
+.contact-cta-btn:hover{transform:translateY(-2px)}
+.footer{background:var(--navy);padding:48px 0 28px}
+.footer-inner{max-width:1100px;margin:0 auto;padding:0 40px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:32px}
+.footer-logo-mark{font-size:28px;margin-bottom:6px}
+.footer-logo-name{font-family:var(--serif);font-size:20px;font-weight:700;color:var(--white)}
+.footer-logo-tag{font-size:12px;color:rgba(255,255,255,.4);margin-top:4px}
+.footer-nav{list-style:none;display:flex;flex-direction:column;gap:10px}
+.footer-nav a{font-size:13px;color:rgba(255,255,255,.5);transition:color .2s}
+.footer-nav a:hover{color:var(--teal2)}
+.footer-contact{font-size:13px;color:rgba(255,255,255,.5);line-height:2}
+.footer-contact strong{color:rgba(255,255,255,.8)}
+.footer-bottom{max-width:1100px;margin:32px auto 0;padding:20px 40px 0;border-top:1px solid rgba(255,255,255,.07);text-align:center;font-size:12px;color:rgba(255,255,255,.25)}
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .65s ease,transform .65s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.anim-0{animation:fadeUp .7s ease both}
+.anim-1{animation:fadeUp .7s .1s ease both}
+.anim-2{animation:fadeUp .7s .2s ease both}
+.anim-3{animation:fadeUp .7s .3s ease both}
+.anim-4{animation:fadeUp .7s .4s ease both}
+@media(max-width:880px){.nav-links{display:none}.nav{padding:0 20px}.hero-inner{grid-template-columns:1fr}.hero-card{display:none}.section-inner,.contact-inner,.footer-inner{padding:0 20px}.section{padding:64px 0}.worry-grid,.services-grid,.services-grid-2col,.voice-grid,.price-cards{grid-template-columns:1fr}.strengths-grid{grid-template-columns:1fr}.flow-steps{grid-template-columns:1fr 1fr;gap:24px}.flow-steps::before{display:none}.about-inner{grid-template-columns:1fr}.about-photo{display:none}.contact-grid{grid-template-columns:1fr}.service-extras{grid-template-columns:1fr}}
+
+/* ── Unsplash画像スタイル ── */
+.service-img {
+  width: 100%; height: 180px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+  display: block;
+}
+.hero-bg-img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover; opacity: .07;
+  z-index: 0; pointer-events: none;
+}
+.about-photo-img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  border-radius: var(--r2);
+}
+.flow-step-img {
+  width: 56px; height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--teal-lt);
+  margin-bottom: 10px;
+}
+.worry-card-img {
+  width: 100%; height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 14px;
+}
+.voice-avatar-img {
+  width: 38px; height: 38px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.service-card > div:last-of-type {
+  padding: 24px 28px 28px;
+}
+
+/* ── ハンバーガーメニュー ── */
+.burger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px;background:none;border:none;z-index:200}
+.burger span{display:block;width:24px;height:2px;background:var(--navy);border-radius:2px;transition:transform .3s,opacity .3s}
+.burger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.burger.open span:nth-child(2){opacity:0}
+.burger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.mobile-menu{display:none;position:fixed;top:64px;left:0;right:0;background:var(--white);border-bottom:2px solid var(--teal-lt);z-index:99;box-shadow:var(--shadow);padding:8px 0 16px}
+.mobile-menu.open{display:block}
+.mobile-menu a{display:block;padding:13px 28px;font-size:14px;font-weight:500;color:var(--navy);border-bottom:1px solid var(--gray-lt);transition:background .2s}
+.mobile-menu a:hover{background:var(--teal-bg);color:var(--teal)}
+.mobile-menu a:last-child{border-bottom:none}
+.mobile-menu .mobile-cta{background:var(--teal);color:var(--white)!important;margin:12px 20px 0;border-radius:30px;text-align:center;font-weight:700!important;border-bottom:none!important}
+.mobile-menu .mobile-cta:hover{background:var(--teal2)!important}
+@media(max-width:880px){
+  .burger{display:flex}
+  .nav-links{display:none!important}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="nav-logo">
+    <div class="nav-logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" width="20" height="20"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div>
+    <div>
+      <div class="nav-logo-sub">CARPE DIEM LEGAL OFFICE</div>
+      <div class="nav-logo-main">カルぺ・ディエム行政書士事務所</div>
+    </div>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#worry">こんなお悩みに</a></li>
+    <li><a href="#services">サービス</a></li>
+    <li><a href="#flow">ご依頼の流れ</a></li>
+    <li><a href="#price">料金</a></li>
+    <li><a href="#about">事務所案内</a></li>
+    <li><a href="#faq">よくある質問</a></li>
+    <li><a href="#contact">無料相談のご予約</a></li>
+    <li><a href="https://forms.gle/hzuse7NZE8q39Kc29" target="_blank" class="nav-cta">無料相談</a></li>
+  </ul>
+  <button class="burger" id="burger" onclick="toggleMenu()" aria-label="メニュー">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- モバイルメニュー -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#worry" onclick="closeMenu()">こんなお悩みに</a>
+  <a href="#services" onclick="closeMenu()">サービス内容</a>
+  <a href="#flow" onclick="closeMenu()">ご依頼の流れ</a>
+  <a href="#price" onclick="closeMenu()">料金</a>
+  <a href="#about" onclick="closeMenu()">事務所案内</a>
+  <a href="#faq" onclick="closeMenu()">よくある質問</a>
+  <a href="#contact" onclick="closeMenu()">無料相談のご予約</a>
+  <a href="https://forms.gle/hzuse7NZE8q39Kc29" target="_blank" class="mobile-cta" onclick="closeMenu()">無料相談を予約する →</a>
+</div>
+
+<section class="hero">
+  <img
+  src="https://images.unsplash.com/photo-1542051841857-5f90071e7989?w=1200&q=80"
+  alt=""
+  class="hero-bg-img"
+  loading="lazy"
+>
+<div class="hero-inner">
+    <div>
+      <div class="hero-badge anim-0">北海道｜介護・障害福祉の許認可専門</div>
+      <h1 class="hero-title anim-1">今この瞬間を、<em>前へ。</em></h1>
+      <p class="hero-desc anim-2">介護・障害福祉・児童発達支援の開業・申請から法人設立まで<br>
+あなたの「決断」を形にする行政書士事務所</p>
+      <div class="hero-btns anim-3" style="display:flex;flex-wrap:wrap;gap:12px;margin-top:8px;">
+        <div style="display:flex;align-items:center;gap:8px;background:var(--white);border:1px solid var(--border);padding:10px 18px;border-radius:24px;font-size:13px;color:var(--navy);box-shadow:0 2px 6px rgba(0,0,0,.05);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="2" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg>
+          初回60分・完全無料
+        </div>
+        <div style="display:flex;align-items:center;gap:8px;background:var(--white);border:1px solid var(--border);padding:10px 18px;border-radius:24px;font-size:13px;color:var(--navy);box-shadow:0 2px 6px rgba(0,0,0,.05);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="2" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg>
+          法人設立前でも相談OK
+        </div>
+        <div style="display:flex;align-items:center;gap:8px;background:var(--white);border:1px solid var(--border);padding:10px 18px;border-radius:24px;font-size:13px;color:var(--navy);box-shadow:0 2px 6px rgba(0,0,0,.05);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="2" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg>
+          オンライン対応可・北海道全域
+        </div>
+        <div style="display:flex;align-items:center;gap:8px;background:var(--white);border:1px solid var(--border);padding:10px 18px;border-radius:24px;font-size:13px;color:var(--navy);box-shadow:0 2px 6px rgba(0,0,0,.05);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="2" width="16" height="16"><polyline points="20 6 9 17 4 12"/></svg>
+          2営業日以内にご返信
+        </div>
+      </div>
+
+      </div>
+    </div>
+    <div class="hero-card anim-2">
+      <div class="hero-card-header">
+        <div class="hero-card-header-sub">Free Consultation</div>
+        <div class="hero-card-header-title">無料相談について</div>
+      </div>
+      <div class="hero-card-row"><span class="hero-card-label">所要時間</span><span class="hero-card-val">約60分</span></div>
+      <div class="hero-card-row"><span class="hero-card-label">相談料</span><span class="hero-card-val free">完全無料</span></div>
+      <div class="hero-card-row"><span class="hero-card-label">形式</span><span class="hero-card-val">対面 or Zoom</span></div>
+      <div class="hero-card-row"><span class="hero-card-label">法人設立前でも</span><span class="hero-card-val free">相談OK</span></div>
+      <div class="hero-card-row"><span class="hero-card-label">物件未定でも</span><span class="hero-card-val free">相談OK</span></div>
+      <div class="hero-card-row"><span class="hero-card-label">エリア</span><span class="hero-card-val">北海道全域</span></div>
+      <div class="hero-card-footer">
+        <a href="https://forms.gle/hzuse7NZE8q39Kc29" target="_blank" style="display:block;text-align:center;font-size:13px;color:var(--teal);padding:12px 0;font-weight:700;">お問い合わせはこちら →</a>
+        <div class="hero-card-note">2営業日以内に折り返しご連絡します</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section worry" id="worry">
+  <div class="section-inner">
+    <div class="section-head">
+      <div class="section-badge reveal">Mission</div>
+      <h2 class="section-title reveal">「今日という日を摑め」</h2>
+      <p class="section-desc reveal" style="max-width:640px;">カルペ・ディエム——ラテン語で「今日という日を摑め」という意味を持つ言葉です。<br>
+介護事業を始めたい。障害福祉サービスを開設したい。会社を立ち上げたい。<br>
+そんな「今すぐ動き出したい」という想いを、全力でサポートします。</p>
+    </div>
+    <div class="worry-grid">
+      <div class="worry-card reveal">
+        <div class="worry-icon" style="color:var(--teal);font-size:32px;margin-bottom:12px;">01</div>
+        <div class="worry-title">介護・障害福祉に特化した専門知識</div>
+        <div class="worry-desc">介護事業所・障害福祉サービスの指定申請に精通。複雑な基準や行政との折衝も、深い知識でスムーズに対応します。</div>
+      </div>
+      <div class="worry-card reveal">
+        <div class="worry-icon" style="color:var(--teal);font-size:32px;margin-bottom:12px;">02</div>
+        <div class="worry-title">スピードと丁寧さの両立</div>
+        <div class="worry-desc">「決めたらすぐ動きたい」という方のために、初回相談から申請完了まで迅速かつ丁寧にサポートします。</div>
+      </div>
+      <div class="worry-card reveal">
+        <div class="worry-icon" style="color:var(--teal);font-size:32px;margin-bottom:12px;">03</div>
+        <div class="worry-title">開業後も続くパートナーシップ</div>
+        <div class="worry-desc">申請して終わりではありません。変更届・更新申請・処遇改善加算など、開業後の手続きも継続してサポートします。</div>
+      </div>
+    </div>
+    <div class="worry-answer reveal">
+      <div class="worry-answer-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#2a8f7f" stroke-width="1.8" width="32" height="32"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+      <div class="worry-answer-text">許認可申請・法人設立には、複雑な手続きと長い時間がかかります。でも、あなたが「やろう」と決めたその瞬間が、最も大切なタイミングです。<br><strong>行政書士事務所カルペ・ディエムは、その一歩を確実に、そして迅速に形にするパートナーです。</strong></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="services">
+  <div class="section-inner">
+    <div class="section-head">
+      <div class="section-badge reveal">Services</div>
+      <h2 class="section-title reveal">サービス内容</h2>
+      <p class="section-desc reveal">介護・障害福祉の２分野に特化。許認可取得から開業後のフォローまで一貫対応します。</p>
+    </div>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;" class="services-grid-2col">
+
+      <!-- 介護 -->
+      <div class="service-card reveal">
+        <div class="service-emoji" style="color:var(--teal)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="40" height="40"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+        </div>
+        <div class="service-cat">CARE</div>
+        <div class="service-name">介護</div>
+        <ul class="service-list">
+          <li>訪問介護 指定申請</li>
+          <li>地域密着型通所介護（小規模デイ）指定申請</li>
+          <li>居宅介護支援（ケアマネ事業所）指定申請</li>
+          <li>グループホーム 指定申請</li>
+          <li>処遇改善加算・変更届・更新申請</li>
+        </ul>
+      </div>
+
+      <!-- 障害福祉 -->
+      <div class="service-card reveal">
+        <div class="service-emoji" style="color:var(--teal)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="40" height="40"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+        </div>
+        <div class="service-cat">DISABILITY WELFARE</div>
+        <div class="service-name">障害福祉</div>
+
+        <!-- 訪問系・日中系 -->
+        <div style="font-size:11px;font-weight:700;color:var(--teal);letter-spacing:.08em;margin:12px 0 6px;">訪問系・日中活動系</div>
+        <ul class="service-list" style="margin-bottom:14px;">
+          <li>居宅介護（ホームヘルプ）指定申請</li>
+          <li>重度訪問介護 指定申請</li>
+          <li>生活介護 指定申請</li>
+          <li>就労継続支援（A型・B型）指定申請</li>
+        </ul>
+
+        <!-- 児童系 -->
+        <div style="font-size:11px;font-weight:700;color:var(--teal);letter-spacing:.08em;margin:0 0 6px;">児童系（障害児通所支援）</div>
+        <ul class="service-list">
+          <li>放課後等デイサービス 指定申請</li>
+          <li>児童発達支援事業所 指定申請</li>
+          <li>多機能型（放課後デイ＋児発）指定申請</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="service-extras reveal">
+      <div class="service-extra">
+        <div class="service-extra-icon" style="color:var(--teal)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="26" height="26"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+        </div>
+        <div>
+          <div class="service-extra-name">法人設立サポート</div>
+          <div class="service-extra-desc">合同会社・株式会社・NPO法人の設立から許認可まで一貫サポート。設立前の相談から承ります。</div>
+        </div>
+      </div>
+      <div class="service-extra">
+        <div class="service-extra-icon" style="color:var(--teal)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="26" height="26"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <div>
+          <div class="service-extra-name">士業ネットワーク連携</div>
+          <div class="service-extra-desc">税理士・司法書士との連携で、税務・登記まで一気通貫でご紹介・サポートします。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section flow-bg" id="flow">
+  <div class="section-inner">
+    <div class="section-head">
+      <div class="section-badge reveal">Process</div>
+      <h2 class="section-title reveal">ご依頼の流れ</h2>
+      <p class="section-desc reveal">お問い合わせから指定通知書の受領まで、丁寧にご案内します。</p>
+    </div>
+    <div class="flow-steps">
+      <div class="flow-step reveal"><div class="flow-circle"><span class="flow-circle-step">STEP</span><span class="flow-circle-n">01</span></div><div class="flow-icon" style="color:var(--teal)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="24" height="24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div><div class="flow-name">無料相談のご予約</div><div class="flow-desc">フォームまたはお電話でご連絡を。2営業日以内に返信します。</div></div>
+      <div class="flow-step reveal"><div class="flow-circle"><span class="flow-circle-step">STEP</span><span class="flow-circle-n">02</span></div><div class="flow-icon" style="color:var(--teal)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="24" height="24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div><div class="flow-name">無料ヒアリング</div><div class="flow-desc">対面orZoomで約60分。現状・課題・スケジュールを整理します。</div></div>
+      <div class="flow-step reveal"><div class="flow-circle"><span class="flow-circle-step">STEP</span><span class="flow-circle-n">03</span></div><div class="flow-icon" style="color:var(--teal)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="24" height="24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div><div class="flow-name">ご提案・契約</div><div class="flow-desc">お見積りをご提示。ご納得いただいてから契約締結します。</div></div>
+      <div class="flow-step reveal"><div class="flow-circle"><span class="flow-circle-step">STEP</span><span class="flow-circle-n">04</span></div><div class="flow-icon" style="color:var(--teal)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="24" height="24"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></div><div class="flow-name">書類作成・申請</div><div class="flow-desc">申請書類を作成し行政庁へ提出。事前相談も代行します。</div></div>
+      <div class="flow-step reveal"><div class="flow-circle"><span class="flow-circle-step">STEP</span><span class="flow-circle-n">05</span></div><div class="flow-icon" style="color:var(--teal)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="24" height="24"><polyline points="20 6 9 17 4 12"/></svg></div><div class="flow-name">指定・開業！</div><div class="flow-desc">指定通知書を受領し開業へ。開業後の変更届もサポートします。</div></div>
+    </div>
+    <div class="flow-note reveal"><div class="flow-note-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#2a8f7f" stroke-width="1.8" width="26" height="26"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div><div class="flow-note-text">介護・障害福祉サービスの指定申請は、<strong>開設希望日の2〜3ヶ月前</strong>に提出するのが目安です。「まだ早いかな…」と思っていても、お気軽にご連絡ください。逆算してスケジュールを組み立てます。</div></div>
+  </div>
+</section>
+
+<section class="section" id="strengths">
+  <div class="section-inner">
+    <div class="section-head">
+      <div class="section-badge reveal">Why Choose Us</div>
+      <h2 class="section-title reveal">選んでいただける理由</h2>
+    </div>
+    <div class="strengths-grid">
+      <div class="strength-card reveal"><div class="strength-num">1</div><div><div class="strength-title">介護・障害福祉に絞った専門性</div><div class="strength-desc">広く浅くではなく、介護・障害福祉・児童発達支援に集中することで深い知識と北海道の行政傾向を把握。書類の品質が高く、差し戻しリスクを最小化できます。</div></div></div>
+      <div class="strength-card reveal"><div class="strength-num">2</div><div><div class="strength-title">介護・障害福祉の申請実績</div><div class="strength-desc">北海道内の自治体ごとの審査傾向・窓口の特性を把握。振興局・市町村それぞれの申請実績をもとに、スムーズな許認可取得をサポートします。</div></div></div>
+      <div class="strength-card reveal"><div class="strength-num">3</div><div><div class="strength-title">初回無料・透明な料金体系</div><div class="strength-desc">相談から見積りまで完全無料。料金は事前に明示し、追加費用が発生する場合は必ずご確認します。「頼んだら高かった」がありません。</div></div></div>
+      <div class="strength-card reveal"><div class="strength-num">4</div><div><div class="strength-title">北海道全域・オンライン完結対応</div><div class="strength-desc">札幌以外の旭川・函館・帯広・釧路など道内全域に対応。ZoomでのヒアリングやPDFでのやり取りで、遠方の方も気軽にご相談いただけます。</div></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section price-bg" id="price">
+  <div class="section-inner">
+    <div class="section-head">
+      <div class="section-badge reveal">Price</div>
+      <h2 class="section-title reveal">料金のご案内</h2>
+      <p class="section-desc reveal">手続きの費用は、すべて事前にご説明します。<br>「気づいたら高くなっていた」は、一切ありません。</p>
+    </div>
+
+    <!-- ══ 介護 ══ -->
+    <div style="margin-bottom:32px;" class="reveal">
+      <h3 style="font-family:var(--serif);font-size:18px;font-weight:700;color:var(--navy);margin-bottom:4px;padding-left:14px;border-left:4px solid var(--teal);">介護事業所 指定申請サポート</h3>
+      <p style="font-size:12px;color:var(--gray);margin-bottom:10px;padding-left:18px;">※ 事業所の規模・市区町村により変動する場合があります</p>
+      <table style="width:100%;border-collapse:collapse;font-size:14px;">
+        <thead><tr style="background:var(--teal);color:white;"><th style="padding:11px 16px;text-align:left;">サービス種別</th><th style="padding:11px 16px;text-align:right;white-space:nowrap;">基本料金（税込）</th></tr></thead>
+        <tbody>
+          <tr style="border-bottom:1px solid var(--border);"><td style="padding:11px 16px;">訪問介護</td><td style="padding:11px 16px;text-align:right;font-weight:700;color:var(--navy);">150,000円〜</td></tr>
+          <tr style="background:var(--gray-lt);border-bottom:1px solid var(--border);"><td style="padding:11px 16px;">地域密着型通所介護（小規模デイサービス）</td><td style="padding:11px 16px;text-align:right;font-weight:700;color:var(--navy);">150,000円〜</td></tr>
+          <tr style="border-bottom:1px solid var(--border);"><td style="padding:11px 16px;">居宅介護支援（ケアマネ事業所）</td><td style="padding:11px 16px;text-align:right;font-weight:700;color:var(--navy);">120,000円〜</td></tr>
+          <tr style="background:var(--gray-lt);"><td style="padding:11px 16px;">グループホーム（認知症対応型共同生活介護）</td><td style="padding:11px 16px;text-align:right;font-weight:700;color:var(--navy);">200,000円〜</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- ══ 障害福祉 ══ -->
+    <div style="margin-bottom:32px;" class="reveal">
+      <h3 style="font-family:var(--serif);font-size:18px;font-weight:700;color:var(--navy);margin-bottom:4px;padding-left:14px;border-left:4px solid var(--teal);">障害福祉サービス 指定申請サポート</h3>
+      <p style="font-size:12px;color:var(--gray);margin-bottom:10px;padding-left:18px;">※ 指定権者は原則として振興局（道）。札幌市・旭川市・函館市など中核市・政令市は市が指定権者となります</p>
+
+      <!-- 訪問系・日中活動系 -->
+      <div style="font-size:12px;font-weight:700;color:var(--teal);letter-spacing:.08em;margin-bottom:6px;padding-left:4px;">▶ 訪問系・日中活動系</div>
+      <table style="width:100%;border-collapse:collapse;font-size:14px;margin-bottom:16px;">
+        <thead><tr style="background:var(--navy);color:white;"><th style="padding:11px 16px;text-align:left;">サービス種別</th><th style="padding:11px 16px;text-align:right;white-space:nowrap;">基本料金（税込）</th></tr></thead>
+        <tbody>
+          <tr style="border-bottom:1px solid var(--border);"><td style="padding:11px 16px;">居宅介護（ホームヘルプ）</td><td style="padding:11px 16px;text-align:right;font-weight:700;color:var(--navy);">150,000円〜</td></tr>
+          <tr style="background:var(--gray-lt);border-bottom:1px solid var(--border);"><td style="padding:11px 16px;">重度訪問介護</td><td style="padding:11px 16px;text-align:right;font-weight:700;color:var(--navy);">150,000円〜</td></tr>
+          <tr style="border-bottom:1px solid var(--border);"><td style="padding:11px 16px;">生活介護</td><td style="padding:11px 16px;text-align:right;font-weight:700;color:var(--navy);">180,000円〜</td></tr>
+          <tr style="background:var(--gray-lt);border-bottom:1px solid var(--border);"><td style="padding:11px 16px;">就労継続支援A型</td><td style="padding:11px 16px;text-align:right;font-weight:700;color:var(--navy);">180,000円〜</td></tr>
+          <tr><td style="padding:11px 16px;">就労継続支援B型</td><td style="padding:11px 16px;text-align:right;font-weight:700;color:var(--navy);">180,000円〜</td></tr>
+        </tbody>
+      </table>
+
+      <!-- 児童系 -->
+      <div style="font-size:12px;font-weight:700;color:var(--teal);letter-spacing:.08em;margin-bottom:6px;padding-left:4px;">▶ 児童系（障害児通所支援）</div>
+      <table style="width:100%;border-collapse:collapse;font-size:14px;margin-bottom:12px;">
+        <thead><tr style="background:var(--navy);color:white;"><th style="padding:11px 16px;text-align:left;">サービス種別</th><th style="padding:11px 16px;text-align:right;white-space:nowrap;">基本料金（税込）</th></tr></thead>
+        <tbody>
+          <tr style="border-bottom:1px solid var(--border);"><td style="padding:11px 16px;">放課後等デイサービス</td><td style="padding:11px 16px;text-align:right;font-weight:700;color:var(--navy);">150,000円〜</td></tr>
+          <tr style="background:var(--gray-lt);border-bottom:1px solid var(--border);"><td style="padding:11px 16px;">児童発達支援事業所</td><td style="padding:11px 16px;text-align:right;font-weight:700;color:var(--navy);">150,000円〜</td></tr>
+          <tr><td style="padding:11px 16px;">多機能型（放課後デイ＋児発）</td><td style="padding:11px 16px;text-align:right;font-weight:700;color:var(--navy);">200,000円〜</td></tr>
+        </tbody>
+      </table>
+
+      <div style="background:var(--teal-bg);border-radius:8px;padding:12px 16px;font-size:12px;color:var(--text);line-height:1.9;">
+        <strong style="color:var(--teal);">北海道の障害福祉申請について</strong><br>
+        障害福祉サービスの指定権者は原則として振興局（道）ですが、
+        札幌市・旭川市・函館市など中核市・政令市は市が指定権者となります。
+        申請先・必要書類が異なるため、まずはお気軽にご相談ください。
+      </div>
+    </div>
+
+    <!-- ══ 法人設立 ══ -->
+    <div style="margin-bottom:32px;" class="reveal">
+      <h3 style="font-family:var(--serif);font-size:18px;font-weight:700;color:var(--navy);margin-bottom:4px;padding-left:14px;border-left:4px solid var(--teal);">法人設立サポート</h3>
+      <p style="font-size:12px;color:var(--gray);margin-bottom:10px;padding-left:18px;">※ 登録免許税・公証役場費用等の実費は別途 ／ 指定申請とセット割引あり</p>
+      <table style="width:100%;border-collapse:collapse;font-size:14px;">
+        <thead><tr style="background:var(--navy);color:white;"><th style="padding:11px 16px;text-align:left;">種別</th><th style="padding:11px 16px;text-align:right;white-space:nowrap;">基本料金</th></tr></thead>
+        <tbody>
+          <tr style="border-bottom:1px solid var(--border);"><td style="padding:11px 16px;">合同会社設立</td><td style="padding:11px 16px;text-align:right;font-weight:700;color:var(--navy);">60,000円〜</td></tr>
+          <tr style="background:var(--gray-lt);border-bottom:1px solid var(--border);"><td style="padding:11px 16px;">株式会社設立</td><td style="padding:11px 16px;text-align:right;font-weight:700;color:var(--navy);">100,000円〜</td></tr>
+          <tr><td style="padding:11px 16px;">NPO法人設立</td><td style="padding:11px 16px;text-align:right;font-weight:700;color:var(--navy);">120,000円〜</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- ══ 顧問契約 ══ -->
+    <div style="margin-bottom:32px;" class="reveal">
+      <h3 style="font-family:var(--serif);font-size:18px;font-weight:700;color:var(--navy);margin-bottom:4px;padding-left:14px;border-left:4px solid var(--teal);">顧問契約（月額）</h3>
+      <p style="font-size:12px;color:var(--gray);margin-bottom:10px;padding-left:18px;">※ 指定申請ご依頼の事業所様は初月無料 ／ 複数事業所割引あり</p>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+        <div style="background:var(--white);border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow-sm);">
+          <div style="background:var(--navy);padding:14px 18px;color:white;">
+            <div style="font-size:10px;opacity:.7;margin-bottom:2px;">LIGHT PLAN</div>
+            <div style="font-family:var(--serif);font-size:16px;font-weight:700;">ライトプラン</div>
+            <div style="font-size:20px;font-weight:700;margin-top:4px;">20,000<span style="font-size:12px;font-weight:400;">円/月</span></div>
+          </div>
+          <div style="padding:14px 18px;font-size:13px;color:var(--text);line-height:2;">
+            変更届・加算届出（年2回まで）<br>メール・電話相談（月4回まで）
+          </div>
+        </div>
+        <div style="background:var(--white);border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow-sm);border:2px solid var(--teal);">
+          <div style="background:var(--teal);padding:14px 18px;color:white;">
+            <div style="font-size:10px;opacity:.8;margin-bottom:2px;">STANDARD PLAN</div>
+            <div style="font-family:var(--serif);font-size:16px;font-weight:700;">スタンダードプラン</div>
+            <div style="font-size:20px;font-weight:700;margin-top:4px;">35,000<span style="font-size:12px;font-weight:400;">円/月</span></div>
+          </div>
+          <div style="padding:14px 18px;font-size:13px;color:var(--text);line-height:2;">
+            変更届・加算届出（無制限）<br>メール・電話相談（無制限）<br>年1回 実地指導対策サポート
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ 変更届・その他 ══ -->
+    <div style="margin-bottom:24px;" class="reveal">
+      <h3 style="font-family:var(--serif);font-size:18px;font-weight:700;color:var(--navy);margin-bottom:10px;padding-left:14px;border-left:4px solid var(--teal);">変更届・その他手続き</h3>
+      <table style="width:100%;border-collapse:collapse;font-size:14px;">
+        <thead><tr style="background:var(--navy);color:white;"><th style="padding:11px 16px;text-align:left;">種別</th><th style="padding:11px 16px;text-align:right;white-space:nowrap;">基本料金</th></tr></thead>
+        <tbody>
+          <tr style="border-bottom:1px solid var(--border);"><td style="padding:11px 16px;">変更届（軽微な変更）</td><td style="padding:11px 16px;text-align:right;font-weight:700;color:var(--navy);">30,000円〜</td></tr>
+          <tr style="background:var(--gray-lt);border-bottom:1px solid var(--border);"><td style="padding:11px 16px;">変更届（加算・体制届）</td><td style="padding:11px 16px;text-align:right;font-weight:700;color:var(--navy);">50,000円〜</td></tr>
+          <tr style="border-bottom:1px solid var(--border);"><td style="padding:11px 16px;">更新申請</td><td style="padding:11px 16px;text-align:right;font-weight:700;color:var(--navy);">80,000円〜</td></tr>
+          <tr style="background:var(--gray-lt);"><td style="padding:11px 16px;">実地指導対策サポート</td><td style="padding:11px 16px;text-align:right;font-weight:700;color:var(--navy);">100,000円〜</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="price-jippi reveal">
+      <strong>ご依頼前に必ずお見積りをご提示します。</strong>
+      追加費用が発生する場合も、事前にご説明・ご了承をいただいてから進めます。
+      複数サービスをまとめてご依頼の場合は割引対応も可能です。
+      実費（登録免許税・証明書取得費等）は別途となります。<br>
+      <strong>初回相談は無料です。まずはお気軽にご連絡ください。</strong>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="voice">
+  <div class="section-inner">
+    <div class="section-head">
+      <div class="section-badge reveal">Voice</div>
+      <h2 class="section-title reveal">お客様の声</h2>
+      <p class="section-desc reveal">開業後にご感想をいただいたお客様の声をご紹介します（掲載許可済み）</p>
+    </div>
+    <div class="voice-grid">
+      <div class="voice-card reveal"><div class="voice-quote">"</div><div class="voice-text">書類の多さに圧倒されていましたが、何を準備すればいいか一つひとつ丁寧に教えてもらえて助かりました。法人設立から指定申請まで任せてよかったです。</div><div class="voice-name"><div class="voice-avatar"><svg viewBox="0 0 24 24" fill="white" width="22" height="22"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div><div><div class="voice-person">A様（札幌市）</div><div class="voice-detail">地域密着型通所介護 開設</div></div></div></div>
+      <div class="voice-card reveal"><div class="voice-quote">"</div><div class="voice-text">旭川在住なのですが、全てオンラインで完結できたので助かりました。障害福祉サービスの指定申請も、振興局への対応をすべて任せられてスムーズでした。</div><div class="voice-name"><div class="voice-avatar"><svg viewBox="0 0 24 24" fill="white" width="22" height="22"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div><div><div class="voice-person">B様（旭川市）</div><div class="voice-detail">居宅介護（障害福祉） 開設</div></div></div></div>
+      <div class="voice-card reveal"><div class="voice-quote">"</div><div class="voice-text">放課後等デイサービスの開設を考えていましたが、基準から手続きまで全然わからず不安でした。丁寧に教えてもらい、無事に指定を受けられました。</div><div class="voice-name"><div class="voice-avatar"><svg viewBox="0 0 24 24" fill="white" width="22" height="22"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div><div><div class="voice-person">C様（函館市）</div><div class="voice-detail">放課後等デイサービス 開設</div></div></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section faq-bg" id="faq">
+  <div class="section-inner">
+    <div class="section-head">
+      <div class="section-badge reveal">FAQ</div>
+      <h2 class="section-title reveal">よくあるご質問</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item reveal"><div class="faq-q"><div class="faq-q-icon">Q</div><div class="faq-q-text">法人がまだ設立できていないのですが相談できますか？</div><div class="faq-toggle">＋</div></div><div class="faq-a">はい、問題ありません。法人設立前の段階からご相談いただくと、法人の種類の選択から設立手続き・指定申請まで一貫してサポートできます。法人設立サポートも承っております。</div></div>
+      <div class="faq-item reveal"><div class="faq-q"><div class="faq-q-icon">Q</div><div class="faq-q-text">物件・スタッフがまだ決まっていない段階でも相談できますか？</div><div class="faq-toggle">＋</div></div><div class="faq-a">大丈夫です。物件選びの段階からチェックすべき要件をお伝えできます。スタッフについても、必要な資格・人数・雇用条件についてアドバイスが可能です。早めにご相談いただくほどスムーズに進みます。</div></div>
+      <div class="faq-item reveal"><div class="faq-q"><div class="faq-q-icon">Q</div><div class="faq-q-text">費用はどのくらいかかりますか？</div><div class="faq-toggle">＋</div></div><div class="faq-a">初回のご相談は完全無料です。訪問介護・地域密着型通所介護の指定申請で15万円〜（税込）、児童発達支援・放課後等デイサービスで15万円〜（税込）が目安です。ヒアリング後に詳細なお見積りをご提示しますので、まずはご相談ください。</div></div>
+      <div class="faq-item reveal"><div class="faq-q"><div class="faq-q-icon">Q</div><div class="faq-q-text">介護と障害福祉の両方の指定を取りたいのですが対応できますか？</div><div class="faq-toggle">＋</div></div><div class="faq-a">もちろんです。介護保険と障害福祉の両方の指定を持つ事業所（共生型サービス）も増えており、セットでのご依頼は割引対応も可能です。それぞれの指定権者（市町村・振興局）への対応も一括してサポートします。</div></div>
+      <div class="faq-item reveal"><div class="faq-q"><div class="faq-q-icon">Q</div><div class="faq-q-text">指定申請は必ず通りますか？</div><div class="faq-toggle">＋</div></div><div class="faq-a">指定の可否は行政庁（市区町村・振興局）が判断するため、保証はできません。ただし、事前相談・書類チェックを徹底することで差し戻しリスクを最小化します。審査中の追加資料対応も指定通知書受領まで無償で行います。</div></div>
+      <div class="faq-item reveal"><div class="faq-q"><div class="faq-q-icon">Q</div><div class="faq-q-text">札幌以外（旭川・函館・帯広など）でも対応できますか？</div><div class="faq-toggle">＋</div></div><div class="faq-a">はい、北海道全域に対応しています。面談はZoom等のオンラインで対応可能です。行政庁への書類提出も代行しますので、お客様が窓口に出向く必要は原則ありません。</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section about-bg" id="about">
+  <div class="section-inner">
+    <div class="section-head">
+      <div class="section-badge reveal">About</div>
+      <h2 class="section-title reveal">事務所・担当者紹介</h2>
+    </div>
+    <div class="about-inner">
+      <div class="about-photo reveal">
+        <div class="about-photo-avatar" style="opacity:.3"><svg viewBox="0 0 24 24" fill="#2a8f7f" width="80" height="80"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div>
+        <div class="about-photo-label">プロフィール写真をここに</div>
+        <div class="about-photo-tag">行政書士　○○　○○</div>
+      </div>
+      <div>
+        <!-- キャッチ -->
+        <p style="font-family:var(--serif);font-size:clamp(17px,2.5vw,22px);font-weight:700;color:var(--navy);line-height:1.65;margin-bottom:20px;" class="reveal">
+          あなたが前を向いて走れるように、<br>私は後ろから全力で押します。
+        </p>
+
+        <!-- 代表メッセージ -->
+        <div class="about-message reveal">
+          介護・障害福祉の現場は今、大きな転換期を迎えています。<br><br>
+          2024年の報酬改定、処遇改善加算の一本化、障害福祉サービスの需要拡大——。
+          制度は複雑になる一方で、「人を支えたい」という想いで開業を目指す方は後を絶ちません。<br><br>
+          私はこれまで、労務・人事の現場に長く携わってきました。
+          採用・定着・処遇改善——介護・障害福祉事業所が開業後に直面する課題を、
+          内側から見てきたからこそ、許認可申請の先にある「運営のリアル」まで見据えたサポートができます。<br><br>
+          <strong style="color:var(--teal);">書類を作って終わりではなく、開業後も事業が回るかどうかまで考える。</strong>
+          それが私のスタンスです。<br><br>
+          「今この瞬間を摑め」——カルペ・ディエムという事務所名に込めた想いです。
+          開業を決意したその瞬間が、最も大切なタイミング。その一歩を、全力で後押しします。
+        </div>
+
+        <!-- 資格 -->
+        <div class="about-licenses reveal">
+          <div class="about-license">
+            <div class="about-license-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#2a8f7f" stroke-width="1.8" width="24" height="24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div>
+            <div>
+              <div class="about-license-name">行政書士</div>
+              <div class="about-license-reg">北海道行政書士会　登録番号：○○○○○号</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 強みボックス -->
+        <div style="background:var(--teal-bg);border-radius:var(--r);padding:20px 22px;margin-top:4px;border-left:4px solid var(--teal);" class="reveal">
+          <div style="font-size:12px;font-weight:700;color:var(--teal);letter-spacing:.1em;margin-bottom:10px;">許認可申請から運営まで、一歩先を見据えたサポート</div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;font-size:13px;color:var(--text);line-height:1.9;">
+            <div>✓ 指定申請書類の作成・提出</div>
+            <div>✓ 人員基準のクリアアドバイス</div>
+            <div>✓ 処遇改善加算の届出</div>
+            <div>✓ 開業後の変更届・更新申請</div>
+            <div>✓ 採用・スタッフ定着の相談</div>
+            <div>✓ 労務管理に関するアドバイス</div>
+          </div>
+          <div style="font-size:11px;color:var(--gray);margin-top:10px;line-height:1.7;">
+            ※ 労務・人事分野は行政書士業務の範囲でのアドバイスとなります。
+            詳細な労務相談は提携の社会保険労務士をご紹介することも可能です。
+          </div>
+        </div>
+
+        <!-- 基本情報テーブル -->
+        <table style="width:100%;border-collapse:collapse;font-size:13px;margin-top:20px;" class="reveal">
+          <tr style="border-bottom:1px solid var(--border);"><th style="text-align:left;padding:10px 0;width:100px;color:var(--gray);font-weight:500;">事務所名</th><td style="padding:10px 0;">カルぺ・ディエム行政書士事務所</td></tr>
+          <tr style="border-bottom:1px solid var(--border);"><th style="text-align:left;padding:10px 0;color:var(--gray);font-weight:500;">所在地</th><td style="padding:10px 0;">北海道○○市○○</td></tr>
+          <tr style="border-bottom:1px solid var(--border);"><th style="text-align:left;padding:10px 0;color:var(--gray);font-weight:500;">電話番号</th><td style="padding:10px 0;">0XX-XXXX-XXXX</td></tr>
+          <tr><th style="text-align:left;padding:10px 0;color:var(--gray);font-weight:500;">営業時間</th><td style="padding:10px 0;">平日 9:00〜18:00（土日祝はメール対応）</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact-sec" id="contact">
+  <div class="contact-inner">
+    <div class="contact-head">
+      <div class="contact-head-sub">FREE CONSULTATION</div>
+      <h2 class="contact-head-title">まずは無料でご相談ください</h2>
+      <p class="contact-head-desc">初回60分・完全無料。対面またはZoomで承ります。<br>「まだ決まっていないことが多くて…」という段階でも大歓迎です。</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-form reveal">
+        <div class="contact-form-title">無料相談のご予約</div>
+        <div class="contact-form-sub">初回相談無料・翌営業日中にご返信します</div>
+        <div class="form-group"><label class="form-label">お名前<span class="form-req">※</span></label><input type="text" class="form-input" placeholder="山田 太郎"></div>
+        <div class="form-group"><label class="form-label">会社名・事業所名</label><input type="text" class="form-input" placeholder="○○株式会社（個人の方は「個人」とご記入ください）"></div>
+        <div class="form-group"><label class="form-label">電話番号</label><input type="tel" class="form-input" placeholder="000-0000-0000"></div>
+        <div class="form-group"><label class="form-label">メールアドレス<span class="form-req">※</span></label><input type="email" class="form-input" placeholder="example@email.com"></div>
+        <div class="form-group"><label class="form-label">ご相談内容</label><select class="form-select"><option value="">選択してください</option><option>訪問介護 指定申請（介護）</option>
+              <option>地域密着型通所介護（小規模デイ）指定申請</option>
+              <option>居宅介護支援（ケアマネ事業所）指定申請</option>
+              <option>グループホーム 指定申請</option>
+              <option>居宅介護・重度訪問介護（障害福祉）指定申請</option>
+              <option>就労継続支援（A型・B型）指定申請</option>
+              <option>放課後等デイサービス 指定申請</option>
+              <option>児童発達支援事業所 指定申請</option>
+              <option>法人設立サポート</option>
+              <option>処遇改善加算 届出・変更届</option>
+              <option>その他・まだ決まっていない</option></select></div>
+        <div class="form-group"><label class="form-label">ご質問・ご要望</label><textarea class="form-textarea" placeholder="ご相談内容をご自由にお書きください。「まだ検討段階」でも大丈夫です。"></textarea></div>
+        <button class="form-btn" id="submitBtn">無料相談を申し込む →</button>
+        <div class="form-note">※ 送信後2営業日以内にご連絡します</div>
+      </div>
+      <div class="contact-info reveal">
+        <div class="contact-info-card"><div class="contact-info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" width="22" height="22"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13 19.79 19.79 0 0 1 1.61 4.4 2 2 0 0 1 3.58 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.18 6.18l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div><div><div class="contact-info-label">TELEPHONE</div><div class="contact-info-val">0XX-XXXX-XXXX<br><span style="font-size:12px;opacity:.7;">平日 9:00〜18:00</span></div></div></div>
+        <div class="contact-info-card"><div class="contact-info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" width="22" height="22"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div><div><div class="contact-info-label">EMAIL</div><div class="contact-info-val">info@carpediem-gyosei.jp<br><span style="font-size:12px;opacity:.7;">24時間受付・翌営業日返信</span></div></div></div>
+        <div class="contact-info-card"><div class="contact-info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" width="22" height="22"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><div><div class="contact-info-label">OFFICE HOURS</div><div class="contact-info-val">オンライン相談（Zoom）対応可<br><span style="font-size:12px;opacity:.7;">遠方・お忙しい方もご利用ください</span></div></div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div><div class="footer-logo-mark" style="font-size:28px;color:var(--teal2)">⚖</div><div class="footer-logo-name">カルぺ・ディエム行政書士事務所</div><div class="footer-logo-tag">今日という日を摑め——介護・障害福祉の許認可専門</div></div>
+    <ul class="footer-nav"><li><a href="#worry">こんなお悩みに</a></li><li><a href="#services">サービス</a></li><li><a href="#flow">ご依頼の流れ</a></li><li><a href="#price">料金</a></li><li><a href="#about">事務所案内</a></li><li><a href="#faq">よくある質問</a></li></ul>
+    <div class="footer-contact"><strong>カルぺ・ディエム行政書士事務所</strong><br>〒○○○-○○○○ 北海道○○市○○<br>TEL：0XX-XXXX-XXXX<br>行政書士登録番号：北海道第○○○○号</div>
+  </div>
+  <div class="footer-bottom">© 2025 カルぺ・ディエム行政書士事務所 All Rights Reserved.</div>
+</footer>
+
+<script>
+const nav=document.getElementById('nav');
+window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',window.scrollY>20));
+const obs=new IntersectionObserver((e)=>{e.forEach((en,i)=>{if(en.isIntersecting){setTimeout(()=>en.target.classList.add('visible'),i*70);obs.unobserve(en.target)}})},{threshold:0.08,rootMargin:'0px 0px -30px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+document.querySelectorAll('.faq-q').forEach(q=>{q.addEventListener('click',()=>{const item=q.closest('.faq-item');const isOpen=item.classList.contains('open');document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));if(!isOpen)item.classList.add('open')})});
+
+
+function toggleMenu() {
+  const burger = document.getElementById('burger');
+  const menu   = document.getElementById('mobileMenu');
+  burger.classList.toggle('open');
+  menu.classList.toggle('open');
+}
+function closeMenu() {
+  document.getElementById('burger').classList.remove('open');
+  document.getElementById('mobileMenu').classList.remove('open');
+}
+// メニュー外クリックで閉じる
+document.addEventListener('click', function(e) {
+  const burger = document.getElementById('burger');
+  const menu   = document.getElementById('mobileMenu');
+  if (!burger.contains(e.target) && !menu.contains(e.target)) {
+    burger.classList.remove('open');
+    menu.classList.remove('open');
+  }
+});
+</script>
+</body>
+</html>
